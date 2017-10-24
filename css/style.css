@@ -1,0 +1,318 @@
+@font-face {
+	font-family: db helvethaicamon x;
+	src: url(db_helvethaicamon_x.ttf);
+	font-weight: bold;
+}
+
+body {
+	font-size: 24px;
+	font-family: db helvethaicamon x;
+	color: white;
+	text-shadow: 1px 1px 2px #000000;
+	background: url(../img/bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+a {
+	font-size: 22px !important;
+	text-decoration: none;
+}
+
+input, textarea, select {
+	height: 42px !important;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 20px !important;  
+}
+
+input[type='text'] {
+	border:0;
+	background: #171d1c;
+	color: #dcd8bf;
+}
+
+input[type='checkbox'] {
+  width: auto !important;
+}
+
+input[type='radio'] {
+  width: auto !important;
+  margin-bottom: 0 !important;
+}
+
+canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn, .btn:active {
+	font-size: 20px !important;
+	border: 0;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.btn:hover {
+	border: 0;
+	color: white;
+}
+
+#okButton, #startButton {
+	width: 110px;
+	height: 43px;
+	color: white;
+	background:url(../img/button.png) no-repeat;
+	transition: all 200ms ease-in;
+	opacity: 0.8;
+}
+
+#okButton:hover, #startButton:hover {
+	opacity: 1;
+}
+
+#logoutButton, #fbLogoutButton, #historyButton, #rankButton {
+	width: 124px;
+	height: 43px;
+	color: white;
+	background:url(../img/buttonBlue.png) no-repeat;
+	transition: all 200ms ease-in;
+	opacity: 0.8;
+}
+
+#logoutButton:hover, #fbLogoutButton:hover, #historyButton:hover, #rankButton:hover {
+	opacity: 1;
+}
+
+.hide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #f2f7ff;
+	top: 0;
+	left: 0;
+}
+
+.form-control {
+	display: inline-block;
+	width: auto;
+}
+
+.wrapper {
+	text-align: center;
+	padding: 30px;
+}
+
+.loginPanel {
+	width: 500px;
+	border-radius: 15px;
+	background-color: #f2f7ff;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.matchPanel {
+	width: 500px;
+	height: 220px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.4);
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.disPanel {
+	width: 500px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.alarmPanel {
+	width: 500px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.resultPanel {
+	width: 500px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hisPanel {
+	width: 500px;
+	height: 220px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 30px 0px 40px 0px;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#onlinePanel {
+	display: inline-block;
+	width: 100%;
+}
+
+#playingPanel {
+	margin-top: 100px;
+}
+
+.input-hidden {
+	position: absolute;
+    left: -9999px;
+}
+
+input[type=radio] + label {
+	text-align: center;
+	line-height: 43px;
+	background:url('../img/mode.png');
+	width: 85px;
+	height: 43px;
+	transition: all 200ms ease-in;
+	cursor:pointer;
+	opacity: 0.8;
+}
+
+input[type=radio] + label:hover {
+	opacity: 1.0;
+}
+
+input[type=radio]:checked + label {
+	opacity: 1.0;
+	background:url('../img/modeActive.png');
+}
+
+.player_1_panel {
+	width: 25%;
+	height: 300px;
+	background: rgba(0,0,0,0.2);
+	float: left;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.player_2_panel {
+	width: 25%;
+	height: 300px;
+	background: rgba(0,0,0,0.2);
+	float: right;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+.player_1_combo {
+	margin-top: 325px;
+	position: fixed;
+	width: 25%;
+	background: rgba(0,0,0,0.2);
+	left: 0;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: center;
+	font-size: 50px;
+	padding: 5px;
+}
+
+.player_2_combo {
+	margin-top: 325px;
+	position: fixed;
+	width: 25%;
+	background: rgba(0,0,0,0.2);
+	right: 0;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	text-align: center;
+	font-size: 50px;
+	padding: 5px;
+}
+
+.timer {
+	position: fixed;
+	top: 640px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.2);
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	padding: 10px 25px 10px 25px;
+}
+
+.mask {
+	position: fixed;
+	height: 200px;
+	width: 200px;
+	top: 40%;
+	left: 40%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 99999px rgba(50, 50, 50, 0.8);
+}
+
+@keyframes shadowPulse {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0px 0px 51px -1px rgba(255,221,97,1);
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+.shadow-pulse {
+    animation-name: shadowPulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes combo {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.combo {
+    animation-name: combo;
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
